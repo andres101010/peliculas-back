@@ -12,7 +12,7 @@ app.get('/peliculas', async (req,res)=>{
     res.json(rows)
 })
 app.get('/crearPelicula', async (req,res)=>{
-    const response = await BD.query('INSERT INTO peliculas(nombre) VALUE("guerra de las galaxias")')
+    const response = await BD.query('INSERT INTO peliculas(name) VALUE("guerra de las galaxias")')
     res.json(response)
 })
 
